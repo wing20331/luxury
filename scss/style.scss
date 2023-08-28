@@ -1,0 +1,2252 @@
+@import "nullstyle.scss";
+
+@font-face {
+  font-family: Montserrat;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+* {
+  font-family: Montserrat;
+}
+
+body {
+  background: #27282b;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.php {
+  display: none;
+}
+
+#main_menu {
+  background: #27282b;
+  width: 246px;
+  height: 370px;
+  overflow: visible;
+  position: absolute;
+  top: 25px;
+  margin-right: 50px;
+
+  #close {
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+    height: 10px;
+
+    img {
+      margin-left: 210px;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 24.38px;
+
+    a:first-child {
+      margin-top: 35px;
+    }
+
+    a {
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.wrapper {
+  width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #27282b;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+
+    .header_body {
+      width: 1200px;
+      height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .header_menu {
+        display: flex;
+        height: 100%;
+
+        .menu_location {
+          display: flex;
+          align-items: center;
+          height: 100%;
+
+          img {
+            width: 320;
+            height: 320;
+            margin-right: 10px;
+          }
+
+          p {
+            font-size: 20px;
+            color: #f4f4f4;
+            width: 80px;
+            height: 22px;
+            line-height: 24.38px;
+          }
+        }
+
+        .menu_number1 {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          margin-left: 126px;
+          width: 185px;
+
+          p {
+            color: #f4f4f4;
+            line-height: 24.38px;
+            font-size: 20px;
+          }
+        }
+
+        .menu_logo {
+          display: flex;
+          align-items: center;
+          margin-left: 94px;
+        }
+
+        .menu_number2 {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          margin-left: 94px;
+          width: 185px;
+
+          p {
+            font-family: Montserrat;
+            color: #f4f4f4;
+            line-height: 24.38px;
+            font-size: 20px;
+          }
+        }
+
+        .menu_account {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: 246px;
+
+          .account_link {
+            margin-left: 154px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 126px;
+            margin-right: 15px;
+          }
+
+          #account_burger {
+            margin: 200px auto;
+            width: 300px;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+            background-color: #27282b;
+            cursor: pointer;
+
+            .burger_line {
+              position: absolute;
+              top: 8px;
+              // right: 0;
+              width: 32px;
+              height: 2px;
+              background: #f4f4f4;
+            }
+
+            .second {
+              top: 18px;
+            }
+
+            .fourth {
+              top: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    margin-top: 100px;
+    width: 100%;
+
+    .main_body {
+      height: 100%;
+      width: 100%;
+      background: #27282b url(../images/Main.png) no-repeat;
+
+      .title {
+        p {
+          padding-top: 200px;
+          padding-left: 355px;
+          color: #ffffff;
+          font-size: 64px;
+          line-height: 72.9px;
+          font-family: Graduate;
+        }
+      }
+
+      .catalog {
+        margin-left: 360px;
+        display: flex;
+        width: 480px;
+        height: 60px;
+        border: 2px solid #f4f4f4;
+        border-radius: 20px;
+        align-items: center;
+        margin-top: 383px;
+
+        .catalog_arrow {
+          margin-left: 37px;
+          width: 49.65px;
+
+          #arrow_black {
+            display: none;
+          }
+        }
+
+        .catalog_content {
+          margin-left: 20.35px;
+
+          p {
+            font-family: Montserrat;
+            font-weight: 500;
+            color: #f4f4f4;
+            font-size: 24px;
+            line-height: 29.26px;
+          }
+        }
+      }
+
+      .catalog:hover #arrow {
+        display: none;
+      }
+
+      .catalog:hover #arrow_black {
+        display: inline;
+      }
+
+      .catalog:hover {
+        background-color: #f4f4f4;
+      }
+
+      .catalog:hover .catalog_content p {
+        color: #27282b;
+      }
+
+      .main_info {
+        margin-top: 174px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .info_block {
+          width: 400px;
+          height: 223px;
+          display: flex;
+          flex-direction: column;
+
+          .block_logo {
+            margin-left: auto;
+            margin-right: auto;
+            height: 80px;
+            width: 80px;
+          }
+
+          .block_title {
+            margin-top: 31px;
+            color: #ffffff;
+            font-size: 32px;
+            line-height: 36.45px;
+            text-align: center;
+          }
+
+          .block_body {
+            margin-top: 22px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 24.38px;
+          }
+        }
+      }
+
+      .carPark {
+        margin-top: 90px;
+        width: 1200px;
+        height: 961px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .carPark_title {
+          width: 225px;
+          height: 58.06px;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 48px;
+          line-height: 54.67px;
+          font-family: Graduate;
+          color: #ffc68c;
+        }
+
+        .carPark_content {
+          margin-top: 23.94px;
+          display: grid;
+          grid-template-columns: 587px 587px;
+
+          .content_item {
+            width: 587px;
+            height: 370px;
+            box-shadow: inset 0px 320 35px 0px #27282b;
+
+            .title {
+              font-size: 32px;
+              line-height: 36.45px;
+              font-family: Graduate;
+              color: #f4f4f4;
+              width: 508px;
+              height: 35px;
+              padding-top: 9px;
+              margin-left: 5px;
+            }
+
+            .audi {
+              margin-left: 10px;
+            }
+
+            .price {
+              height: 35px;
+              width: 280px;
+              font-size: 32px;
+              line-height: 36.45px;
+              font-family: Graduate;
+              color: #f4f4f4;
+              margin-left: 290px;
+              margin-top: 285px;
+            }
+          }
+
+          .first {
+            background: url(../images/lambo1.png);
+          }
+
+          .first:hover {
+            background-image: url(../images/lambo2.png);
+          }
+
+          .second {
+            background-image: url(../images/rolls1.png);
+            margin-left: 26px;
+          }
+
+          .second:hover {
+            background-image: url(../images/rolls2.png);
+          }
+
+          .third {
+            background-image: url(../images/audi1.png);
+            margin-top: 320;
+          }
+
+          .third:hover {
+            background-image: url(../images/audi2.png);
+          }
+
+          .fourth {
+            background-image: url(../images/mustang1.png);
+            margin-left: 26px;
+            margin-top: 320;
+          }
+
+          .fourth:hover {
+            background-image: url(../images/mustang2.png);
+          }
+        }
+      }
+
+      .carPark_button {
+        margin-top: 320;
+        width: 480px;
+        height: 60px;
+        border: 2px solid #ffc68c;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        color: #ffc68c;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 29.26px;
+      }
+
+      .carPark_button:hover {
+        background-color: #ffc68c;
+        color: #f4f4f4;
+      }
+    }
+
+    .info {
+      margin-top: 93px;
+      width: 1200px;
+      height: 586px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid #ffc68c;
+      border-radius: 250px 0 0 0;
+
+      .info_title {
+        margin-top: 22px;
+        font-family: Graduate;
+        font-size: 48px;
+        line-height: 54.67px;
+        text-align: center;
+        color: #f4f4f4;
+      }
+
+      .info_content {
+        p {
+          font-family: Graduate;
+          font-size: 32px;
+          line-height: 36.45px;
+          color: #f4f4f4;
+          margin-left: 116px;
+          margin-top: 27px;
+        }
+
+        p:first-child {
+          margin-top: 35px;
+        }
+
+        .color {
+          color: #ffc68c;
+          font-size: 32px;
+        }
+
+        span {
+          font-family: Montserrat;
+          font-size: 20px;
+          line-height: 24.38px;
+        }
+
+        .text {
+          display: block;
+          margin-left: 95px;
+        }
+
+        .first,
+        .second,
+        .third,
+        .fourth,
+        .fifth,
+        .sixth {
+          margin-right: 34px;
+        }
+      }
+    }
+
+    .clients {
+      z-index: 0;
+      margin-top: 90px;
+      height: 593px;
+      width: 100%;
+      overflow: hidden;
+
+      .clients_title {
+        height: 58px;
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Graduate;
+        font-size: 48px;
+        line-height: 54.67px;
+        color: #ffc68c;
+        margin-bottom: 38px;
+      }
+
+      .swiper_container {
+        width: 100%;
+        z-index: 1;
+
+        .swiper_wrapper {
+          width: 100%;
+
+          .swiper-slide {
+            width: 710px;
+
+            .slide-image {
+              width: 710px;
+            }
+          }
+        }
+      }
+    }
+
+    .benefits {
+      margin-top: 90px;
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .benefits_title {
+        font-family: Graduate;
+        font-size: 48px;
+        text-align: center;
+        line-height: 54.67px;
+        color: #ffc68c;
+      }
+
+      .benefits_content {
+        margin-top: 38px;
+        font-family: Montserrat;
+        font-size: 32px;
+        line-height: 39.01px;
+        color: #f4f4f4;
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    margin-top: 320;
+
+    .footer_wrapper {
+      width: 1205px;
+      height: 198px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+
+      .title {
+        color: #ffc68c;
+        font-size: 20px;
+        font-family: Montserrat;
+        line-height: 24.38px;
+      }
+
+      .footer_politics {
+        width: 340px;
+        height: 175px;
+        display: flex;
+        flex-direction: column;
+
+        .politics_logo {
+          width: 165px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+
+        .politics_content {
+          margin-top: 12px;
+          color: #f4f4f4;
+          font-family: Montserrat;
+          font-size: 20px;
+          line-height: 24.38px;
+        }
+      }
+
+      .footer_menu {
+        margin-left: 100px;
+        margin-top: 13px;
+        width: 150px;
+
+        .menu_title {
+          margin-bottom: 20px;
+        }
+
+        .menu_content {
+          p {
+            font-size: 20px;
+            line-height: 24.38px;
+            color: #f4f4f4;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .footer_contacts {
+        margin-top: 13px;
+        margin-left: 135px;
+        width: 240px;
+
+        .contacts_title {
+          margin-bottom: 25px;
+        }
+
+        .contacts_content {
+          p {
+            color: #f4f4f4;
+            font-size: 20px;
+            line-height: 24.38px;
+          }
+
+          margin-bottom: 21px;
+        }
+
+        .writeUs_title {
+          margin-bottom: 21px;
+        }
+
+        .writeUs_content {
+          color: #f4f4f4;
+          font-size: 20px;
+          line-height: 24.38px;
+        }
+      }
+
+      .footer_address {
+        margin-left: 72px;
+        margin-top: 13px;
+        width: 185px;
+
+        .address_content {
+          margin-top: 25px;
+          margin-bottom: 25px;
+
+          p {
+            color: #f4f4f4;
+            font-size: 20px;
+            line-height: 24.38px;
+          }
+        }
+
+        .address_links {
+          width: 160px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.popup {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.8s ease 0s;
+
+  .popup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 320 10px;
+
+    .popup_content {
+      background-color: #27282b;
+      border-radius: 20px;
+      width: 800px;
+      height: 685px;
+      transition: all 0.8s ease 0s;
+      opacity: 0;
+      transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+
+      .popup_letter {
+        width: 100%;
+        height: 80px;
+        background-image: url("../images/account_letter.png");
+      }
+
+      .popup_title {
+        margin-top: 15px;
+        font-size: 48px;
+        width: 600px;
+        height: 55px;
+        color: #f4f4f4;
+        font-family: Montserrat;
+        line-height: 58.51px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .popup_input {
+        background-color: #27282b;
+        width: 415px;
+        height: 35px;
+        margin-left: 193px;
+        border-bottom: 1px solid #f4f4f4;
+        color: #f4f4f4;
+        font-family: Montserrat;
+        line-height: 24.38px;
+        font-size: 20px;
+        display: block;
+      }
+
+      .popup_login {
+        margin-top: 45px;
+      }
+
+      .popup_password {
+        margin-top: 15px;
+      }
+
+      .popup_button {
+        display: block;
+        background-color: #27282b;
+        width: 415px;
+        height: 60px;
+        margin-left: 192px;
+        border: 2px solid #ffc68c;
+        border-radius: 20px;
+        margin-top: 45px;
+        color: #f4f4f4;
+        font-size: 24px;
+        line-height: 29.26px;
+        margin-bottom: 17px;
+      }
+
+      .popup_button:hover {
+        background-color: #ffc68c;
+        color: #27282b;
+      }
+
+      .popup_registration {
+        height: 45px;
+        width: 250px;
+        font-size: 20px;
+        color: #ffc68c;
+        text-align: center;
+        line-height: 24.38px;
+      }
+
+      .popup_terms {
+        width: 430px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #f4f4f4;
+        font-size: 20px;
+        line-height: 24.38px;
+        position: relative;
+        top: 86px;
+
+        a {
+          color: #ffc68c;
+        }
+      }
+
+      .last {
+        width: 430px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #f4f4f4;
+        font-size: 20px;
+        line-height: 24.38px;
+        position: static;
+        margin-top: 10px;
+
+        a {
+          color: #ffc68c;
+        }
+      }
+
+      #error {
+        color: red;
+        font-size: 20px;
+        line-height: 24px;
+        width: 500px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        visibility: hidden;
+      }
+
+      .popup_name {
+        margin-top: 47px;
+      }
+
+      .popup_email {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+
+  .popup_content {
+    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.wrapper_body {
+  margin-top: 160px;
+  width: 100%;
+  height: 1200px;
+
+  .wrapper_content {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .wrapper_menu {
+      width: 378px;
+      height: 175px;
+      background-color: #f4f4f4;
+      border-radius: 20px;
+
+      .wrapper_letter {
+        background-image: url(../images/account_letter.png);
+        background-size: 378px 35px;
+        width: 100%;
+        height: 35px;
+      }
+
+      .menu_content {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+          height: 20px;
+          color: #27282b;
+          font-size: 20px;
+          line-height: 24px;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+
+        a:not(:first-child) {
+          margin-top: 15px;
+        }
+      }
+    }
+
+    .wrapper_profile {
+      width: 800px;
+      height: 1072px;
+      background-color: #f4f4f4;
+      border-radius: 20px;
+      display: none;
+
+      .profile_subtitle {
+        width: 150px;
+        height: 20px;
+        font-size: 20px;
+        color: #27282b;
+        margin-top: 15px;
+        margin-left: 28px;
+        line-height: 24px;
+      }
+
+      .profile_title {
+        color: #27282b;
+        font-size: 32px;
+        font-weight: 600;
+        height: 45px;
+        width: 440px;
+        margin-top: 15px;
+        margin-left: 28px;
+
+      }
+
+      .profile_personal {
+        .personal_title {
+        }
+
+        .title {
+          margin-top: 45px;
+          color: #27282b;
+          height: 20px;
+          font-size: 20px;
+          line-height: 24px;
+          margin-left: 28px;
+        }
+
+        input {
+          padding-left: 10px;
+          margin-top: 15px;
+          margin-left: 32px;
+          width: 742px;
+          height: 50px;
+          color: #27282b;
+          font-size: 20px;
+          line-height: 24px;
+          border: 1px solid #27282b;
+          border-radius: 5px;
+        }
+      }
+
+      .profile_additional {
+        .title {
+          margin-top: 45px;
+          color: #27282b;
+          height: 20px;
+          font-size: 20px;
+          line-height: 24px;
+          margin-left: 28px;
+        }
+
+        input {
+          padding-left: 10px;
+          margin-top: 15px;
+          margin-left: 32px;
+          width: 742px;
+          height: 50px;
+          color: #27282b;
+          font-size: 20px;
+          line-height: 24px;
+          border: 1px solid #27282b;
+          border-radius: 5px;
+        }
+      }
+
+      .profile_passwordChange {
+        .title {
+          margin-top: 45px;
+          color: #27282b;
+          height: 20px;
+          font-size: 20px;
+          line-height: 24px;
+          margin-left: 28px;
+        }
+
+        input {
+          padding-left: 10px;
+          margin-top: 15px;
+          margin-left: 32px;
+          width: 742px;
+          height: 50px;
+          color: #27282b;
+          font-size: 20px;
+          line-height: 24px;
+          border: 1px solid #27282b;
+          border-radius: 5px;
+        }
+      }
+
+      .profile {
+        width: 317px;
+        height: 60px;
+        background: #ffc68c;
+        border-radius: 20px;
+        color: #f4f4f4;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+        margin-top: 47px;
+        margin-left: 31px;
+        box-shadow: 2px 2px 1px #000000;
+      }
+    }
+  }
+}
+
+.feedback {
+  margin-top: 90px;
+  background-image: url("../images/feedback_background.png");
+  width: 1920px;
+  height: 700px;
+
+  .feedback_title {
+    height: 64px;
+    width: 500px;
+    font-family: Graduate;
+    font-size: 48px;
+    line-height: 54.67px;
+    color: #f4f4f4;
+    padding-top: 34px;
+    margin-left: 360px;
+  }
+
+  .feedback_text {
+    width: 1042px;
+    height: 45px;
+    font-family: Montserrat;
+    font-size: 32px;
+    line-height: 39.01px;
+    color: #f4f4f4;
+    margin-top: 40px;
+    margin-left: 360px;
+  }
+
+  .feedback_name {
+    height: 50px;
+    width: 468px;
+    margin-left: 360px;
+    margin-top: 320;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24.38px;
+    padding-left: 20px;
+    margin-right: 105px;
+  }
+
+  .feedback_number {
+    height: 50px;
+    width: 468px;
+    margin-top: 320;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24.38px;
+    padding-left: 20px;
+  }
+
+  .feedback_button {
+    width: 465px;
+    height: 60px;
+    background: linear-gradient(
+      180deg,
+      rgba(39, 40, 43, 0.5) 0%,
+      rgba(39, 40, 43, 0) 100%
+    );
+    border-radius: 220px 220px 0px 0px;
+    border: 2px solid #f4f4f4;
+    border-radius: 20px;
+    color: #f4f4f4;
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 29.26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 360px;
+    margin-top: 320;
+    cursor: pointer;
+  }
+
+  #feedback_button:hover {
+    background: #f4f4f4;
+    color: #27282b;
+  }
+}
+
+.wrapper-lambo {
+  padding: 320;
+  padding-top: 75px;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.labmo-title {
+  z-index: 2;
+  position: absolute;
+  font-family: Graduate;
+  line-height: 72.9px;
+  font-size: 64px;
+  color: #fff;
+  width: 935px;
+  margin-top: 40px;
+  margin-left: 390px;
+}
+
+.image-slider {
+  padding: 320 0px 70px 0;
+}
+
+.image-slider__wrapper {
+}
+
+.image-slider__slide {
+}
+
+.image-slider__image {
+  text-align: center;
+}
+
+.image-slider__image img {
+  min-width: 100%;
+}
+
+.lambo-information {
+  width: 100%;
+  display: flex;
+
+  .lambo-info {
+    width: 632px;
+    height: 424px;
+    border: 3px solid #f4f4f4;
+    border-radius: 10px;
+    margin-left: 360px;
+    padding-top: 16px;
+
+    p {
+      color: #f4f4f4;
+      font-size: 24px;
+      line-height: 39px;
+      margin-left: 28px;
+    }
+
+    p:firt-child() {
+      margin-top: 16px;
+    }
+  }
+
+  .lambo-rent {
+    width: 523px;
+    height: 424px;
+    border: 3px solid #ffc68c;
+    border-radius: 10px;
+    margin-left: 45px;
+
+    .rent-title {
+      font-size: 24px;
+      color: #f4f4f4;
+      line-height: 29.26px;
+      margin-top: 16px;
+      margin-left: 28px;
+    }
+
+    .rent-start {
+      margin-left: 28px;
+      margin-top: 20px;
+    }
+
+    .rent-end {
+      margin-left: 28px;
+      margin-top: 20px;
+    }
+
+    hr {
+      margin-top: 27px;
+      height: 3px;
+      background-color: #ffc68c;
+      width: 100%;
+    }
+
+    .rent-price {
+      margin-left: 28px;
+      margin-top: 20px;
+      color: #f4f4f4;
+      font-size: 24px;
+      line-height: 29.26px;
+    }
+
+    .price {
+      margin-left: 28px;
+      margin-top: 24px;
+      height: 50px;
+      width: 333px;
+      color: #f4f4f4;
+      border: 3px solid #ffc68c;
+      border-radius: 20px;
+      background: #27282b;
+      font-size: 20px;
+      line-height: 29.26px;
+      text-align: center;
+    }
+
+    .rent {
+      margin-left: 28px;
+      margin-top: 14px;
+      height: 50px;
+      width: 333px;
+      color: #f4f4f4;
+      border-radius: 20px;
+      background: #ffc68c;
+      font-size: 20px;
+      line-height: 29.26px;
+      text-align: center;
+    }
+
+    .rent:hover {
+      background: #f4f4f4;
+      color: #27282b;
+    }
+  }
+}
+
+.rent-start {
+  width: 468px;
+  height: 50px;
+
+  #rent-start {
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #27282b;
+    opacity: 0.8;
+    padding-left: 62px;
+    background-image: url(../images/lambo/images/start.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    padding-right: 15px;
+  }
+}
+
+.rent-end {
+  width: 468px;
+  height: 50px;
+
+  #rent-end {
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    opacity: 0.8;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #27282b;
+    opacity: 0.8;
+    padding-left: 62px;
+    background-image: url(../images/lambo/images/end.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 15px;
+    padding-right: 15px;
+  }
+}
+
+.car-info {
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 29.26px;
+}
+
+.car-menu {
+  margin-top: 45px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .car-peculiarities {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e6063;
+    padding: 320 15px 28px 15px;
+
+    .peculiarities-text {
+      height: 400;
+      font-size: 24px;
+      line-height: 29.26px;
+      color: #f4f4f4;
+    }
+
+    #peculiarities-plus {
+      cursor: pointer;
+      transition: all 0.5s ease 0s;
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.peculiarities {
+  width: 1200px;
+  height: 382px;
+  overflow: hidden;
+}
+
+#peculiarities-hidden {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e6063;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #f4f4f4;
+  padding-top: 20px;
+  padding-left: 320;
+  transition: all 0.5s ease 0s;
+  transform: translate(0px, -100%);
+}
+
+.rent1 {
+  width: 1200px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.car-rent {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5e6063;
+  padding: 320 15px 28px 15px;
+
+  .rent-text {
+    height: 400;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #f4f4f4;
+  }
+
+  #rent-plus {
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    transform: rotate(0deg);
+  }
+}
+
+#rent-hidden {
+  width: 100%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e6063;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #f4f4f4;
+  padding-top: 20px;
+  padding-left: 320;
+  transition: all 0.5s ease 0s;
+  transform: translate(0px, -100%);
+}
+
+.move {
+  position: relative;
+  top: -377px;
+  transition: all 0.5s ease 0s;
+}
+
+.car-price {
+  margin-left: auto;
+  margin-right: auto;
+  color: #f4f4f4;
+  font-size: 24px;
+  line-height: 29.26px;
+  width: 1200px;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    td {
+      border: 3px solid #f4f4f4;
+      text-align: center;
+    }
+  }
+}
+
+.menu-move {
+  transition: all 0.5s ease 0s;
+  position: relative;
+  top: -482px;
+}
+
+.wrapper_rent {
+  width: 800px;
+}
+
+.rent_block {
+  background-color: #f4f4f4;
+  width: 800px;
+  height: 240px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+
+  .rent_block_body {
+    display: flex;
+  }
+
+  img {
+    margin-top: 22px;
+    width: 275px;
+    height: 138px;
+    position: relative;
+    border-radius: 0px 220px 220px 0px;
+  }
+
+  .carName {
+    font-size: 24px;
+    padding: 10px;
+    color: #27282b;
+    border-radius: 20px;
+    line-height: 27.34px;
+    font-family: Graduate;
+    text-align: center;
+  }
+
+  .carRent {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    line-height: 24px;
+
+    p {
+      opacity: 0.8;
+    }
+  }
+}
+
+.rent_block:first-child {
+  margin-top: 320;
+}
+
+.car {
+  margin-left: 32px;
+  width: 473px;
+}
+
+.carInfo {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 14px;
+  padding-right: 28px;
+
+  .moderation {
+    background: #ffc68c;
+    border-radius: 20px;
+    width: 220px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .info {
+    background: #ffc68c;
+    border-radius: 20px;
+    width: 220px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    box-shadow: 1px 1px 2px #000000;
+  }
+}
+
+.wrapper-docs {
+  display: none;
+  
+}
+
+.docs-block {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  width: 800px;
+  height: 1250px;
+
+  .docs-header {
+    height: 148px;
+    .docs-h1 {
+      font-family: Montserrat;
+      padding-top: 48px;
+      margin-left: 28px;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39.01px;
+      color: #27282b;
+      padding-bottom: 10px;
+    }
+    .docs-h2 {
+      margin-left: 28px;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24.38px;
+      color: #27282b;
+      opacity: 0.6;
+    }
+  }
+
+  .docs-subheader {
+    font-family: Montserrat;
+    background-color: #27282b;
+    height: 80px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #f4f4f4;
+    line-height: 29.26px;
+    padding-left: 62px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .docs-passport {
+    .passport-header {
+      margin-top: 320;
+      margin-left: 25px;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39.01px;
+      color: #27282b;
+      margin-bottom: 10px;
+    }
+    .passport-body {
+      width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .docs-item {
+        width: 301px;
+        height: 235px;
+        margin-right: 320;
+        margin-bottom: 320;
+        .docs-item-header {
+          font-family: Montserrat;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24.38px;
+          color: #27282b;
+          margin-bottom: 15px;
+        }
+      }
+
+      .docs-item:nth-child(3){
+        margin-top: 75px;
+        margin-bottom: 50px;
+      }
+
+      .docs-item:nth-child(odd) {
+        margin-left: 28px;
+      }
+    }
+  }
+
+  .docs-vu {
+    .vu-header {
+      margin-left: 25px;
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39.01px;
+      color: #27282b;
+      margin-bottom: 10px;
+    }
+    .vu-body {
+      width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .vu-item {
+        width: 301px;
+        height: 235px;
+        margin-right: 320;
+        margin-bottom: 320;
+        .vu-item-header {
+          font-family: Montserrat;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24.38px;
+          color: #27282b;
+          margin-bottom: 15px;
+        }
+      }
+
+      .vu-item:nth-child(odd) {
+        margin-left: 28px;
+      }
+    }
+  }
+}
+
+.main-header {
+  font-family: Graduate;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72.9px;
+  text-align: center;
+  color: #ffffff;
+}
+.main-body {
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .catalog-categories {
+    display: flex;
+    flex-direction: column;
+    margin-left: 185px;
+  }
+
+  .catalog-item {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58.51px;
+    text-align: right;
+    color: #f4f4f4;
+    width: 400px;
+  }
+
+  .catalog-item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .catalog-item:hover {
+    color: #ffc68c;
+  }
+
+  #coupe-img,
+  #sportcars-img,
+  #cabriolet-img,
+  #SUV-img,
+  #van-img {
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  #coupe-img {
+    position: relative;
+    top: 117px;
+    left: 411px;
+  }
+
+  #sportcars-img {
+    position: relative;
+    top: 0;
+    left: -300px;
+  }
+
+  #cabriolet-img {
+    position: relative;
+    left: -650px;
+    top: 310px;
+  }
+
+  #SUV-img {
+    position: relative;
+    left: 450px;
+    top: 50px;
+  }
+
+  #van-img {
+    position: relative;
+    left: -220px;
+    top: 220px;
+  }
+}
+
+.allCars-header {
+  padding-left: 361px;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  background: #1b1b1b;
+
+  .help-hedaer {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+
+  .help-subheader {
+    width: 461px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  .help-button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29.26px;
+    color: #ffc68c;
+    margin-top: 50px;
+  }
+}
+
+.allCars-body {
+  margin-top: 61px;
+
+  .allCars-body-header {
+    display: flex;
+    .allCars-title {
+      width: 850px;
+      padding-left: 360px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 59px;
+      color: #f4f4f4;
+    }
+
+    .allCars-filter {
+      display: flex;
+      align-items: center;
+
+      .filter {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #f4f4f4;
+        margin-right: 40px;
+        img {
+          margin-left: 5px;
+        }
+      }
+
+      .filter:first-child {
+        margin-left: 179px;
+      }
+    }
+  }
+
+  .filter-menu {
+    z-index: 1;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px 13px;
+    border-radius: 10px;
+    position: relative;
+
+    label {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #5e6063;
+    }
+
+    input {
+      margin-right: 5px;
+    }
+  }
+
+  .mark {
+    top: -9px;
+    left: 930px;
+    display: none;
+  }
+
+  .power {
+    top: -9px;
+    left: 1050px;
+    display: none;
+  }
+
+  .color {
+    top: -9px;
+    left: 1225px;
+    display: none;
+  }
+
+  .price {
+    top: -9px;
+    left: 1345px;
+    display: none;
+  }
+
+  #price-filter {
+    width: 345px;
+    input {
+      width: 110px;
+      height: 30px;
+      border: 1px solid #b7b7b7;
+      text-align: center;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #5e6063;
+    }
+    button {
+      width: 45px;
+      height: 30px;
+      background: none;
+      border: 1px solid #b7b7b7;
+    }
+  }
+
+  .allCars-body-main {
+    position: relative;
+    margin-top: 85px;
+    margin-bottom: 189px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .allCars-item {
+      
+      width: 430px;
+      height: 270px;
+      margin-right: 20px;
+      margin-bottom: 41px;
+    }
+
+    .allCars_first {
+      margin-left: 70px;
+    }
+  }
+}
+
+.catalog-body {
+  margin-bottom: 200px;
+}
+
+.choiceAuto {
+  position: absolute;
+  display: none;
+  top: 466px;
+  left: 560px;
+  width: 800px;
+  height: 820px;
+  background: url(/images/catalog/main/image-highPolygon.png) #fff;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  color: #27282b;
+
+  .choiceAuto-header {
+    margin-right: 104px;
+    margin-left: 104px;
+    padding-top: 95px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 110%;
+    text-align: center;
+  }
+
+  .choiceAuto-subheader {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #5e6063;
+    margin-left: 68px;
+    width: 665px;
+    margin-bottom: 45px;
+  }
+
+  .choise-input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #27282b;
+    margin-bottom: 10px;
+    margin-left: 80px;
+  }
+
+  input {
+    margin-left: 80px;
+    height: 50px;
+    width: 641px;
+    border: 1px solid #27282b;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 5px;
+  }
+
+  .choice-send {
+    cursor: pointer;
+    height: 60px;
+    width: 415px;
+    margin-left: 193px;
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #f4f4f4;
+    background: #27282b;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .choice-send:hover {
+    background: #ffc68c;
+    color: #27282b;
+  }
+
+  .choice-info {
+    margin-top: 15px;
+    margin-left: 131px;
+    width: 538px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #5e6063;
+  }
+}
+
+.terms__wrapper {
+  .terms__header {
+    text-align: center;
+    padding-top: 224px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 73px;
+    color: #f4f4f4;
+  }
+
+  .terms__requirements {
+    display: flex;
+    justify-content: center;
+
+    .requirements__item {
+      margin-top: 60px;
+      height: 145px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .requirements__header {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 59px;
+        color: #f4f4f4;
+      }
+
+      .requirements__main {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #f4f4f4;
+      }
+    }
+
+    .requirements__item:nth-child(2) {
+      margin-left: 70px;
+      margin-right: 70px;
+      width: 460px;
+      border-left: 1px solid #f4f4f4;
+      border-right: 1px solid #f4f4f4;
+    }
+  }
+
+  .terms__main {
+    display: flex;
+    justify-content: center;
+    margin-top: 86px;
+    .terms__passport {
+      width: 400px;
+      height: 362px;
+      border: 1px solid #f4f4f4;
+      border: 3px solid #f4f4f4;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .passport__image {
+        margin-top: 100px;
+        margin-right: 26px;
+        margin-left: 22px;
+      }
+
+      .passport__main {
+        .passport__header {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 39px;
+          color: #f4f4f4;
+          margin-bottom: 30px;
+        }
+        .passport__subheader {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 29px;
+          color: #ffc68c;
+        }
+        .passport__info {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #f4f4f4;
+          margin-top: 10px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .terms__info {
+      margin-left: 85px;
+      .info__item {
+        width: 876px;
+
+        background: #5e6063;
+        opacity: 0.8;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .info__block {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 75px;
+
+          .item__text {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #f4f4f4;
+          }
+        }
+
+        .info__hidden-block {
+          margin-top: 30px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #f4f4f4;
+          margin-bottom: 34px;
+          position: absolute;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+.aboutUs__wrapper {
+  margin-bottom: 30px;
+  .aboutUs__header {
+    text-align: center;
+    padding-top: 120px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 73px;
+    color: #f4f4f4;
+  }
+
+  .aboutUs__info {
+    display: flex;
+    justify-content: center;
+
+    .info__item {
+      margin-top: 60px;
+      height: 145px;
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .info__header {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 59px;
+        color: #ffc68c;
+      }
+
+      .info__main {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #f4f4f4;
+        text-align: center;
+      }
+    }
+
+    .info__item:nth-child(2) {
+      margin-left: 70px;
+      margin-right: 70px;
+      width: 460px;
+      border-left: 1px solid #f4f4f4;
+      border-right: 1px solid #f4f4f4;
+    }
+  }
+}
+
+.aboutUs__main {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row; //75
+
+  .aboutUs {
+    margin-top: 75px;
+    padding-left: 107px;
+    padding-right: 107px;
+
+    .aboutUs__header {
+      font-family: "Graduate";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 73px;
+      color: #f4f4f4;
+    }
+
+    .aboutUs__body {
+      .aboutUs__body-item {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #f4f4f4;
+        margin-bottom: 20px;
+      }
+      ul{
+        li {
+          margin-left: 18px;
+          list-style-type: disc;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #f4f4f4;
+        }
+      }
+      
+    }
+  }
+}
+
+.docImg{
+  width: 290px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.inputFile{
+display: none;
+}
+
+.btnLoad {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid #f1c40f;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  transition: .4s;
+}
+.btnLoad:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: .4s;
+}
+.btnLoad:hover:after {
+  border-color: #f1c40f;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
+.choice-send1{
+  display: none;
+}

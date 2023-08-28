@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/scss/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Luxury rent</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header lock_padding">
+            <div class="header_body">
+                <div class="header_menu">
+                    <div class="menu_location">
+                        <img src="/images/Vector.png" alt="">
+                        <p>Москва</p>
+                    </div>
+                    <div class="menu_number1">
+                        <p>+7 (904) 033-62-58</p>
+                    </div>
+                    <div class="menu_logo">
+                        <a href="/index.html"> <img src="/images/Logo.png" alt=""></a>
+                    </div>
+                    <div class="menu_number2">
+                        <p>+7 (987) 935-83-24</p>
+                    </div>
+                    <div class="menu_account">
+                        <a href="#popup" class="account_link popup_link">
+                            <img src="/images/account.png" alt="">
+                        </a>
+                        <div id="account_burger">
+                            <div class="burger_line first"></div>
+                            <div class="burger_line second"></div>
+                            <div class="burger_line fourth"></div>
+                        </div>
+                        <div id="main_menu">
+                            <div id="close">
+                                <img src="/images/Close.png" alt="">
+                            </div>
+                            <nav>
+                                <a href="#popup" class="popup_link">Мой профиль</a>
+                                <a href="/pages/catalog.html">Автопарк</a>
+                                <a href="/pages/terms.html">Условия</a>
+                                <a href="/pages/aboutUs.html">О нас</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="terms__wrapper">
+                <div class="terms__body">
+                    <div class="terms__header">
+                        Условия аренды автомобиля
+                    </div>
+                    <div class="terms__requirements">
+                        <div class="requirements__item">
+                            <div class="requirements__header">
+                                21 год
+                            </div>
+                            <div class="requirements__main">
+                                Минимальный возраст
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <div class="requirements__header">
+                                2 года
+                            </div>
+                            <div class="requirements__main">
+                                Минимальный стаж вождения
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <div class="requirements__header">
+                                Без залога
+                            </div>
+                            <div class="requirements__main">
+                                По двум документам (паспорт, ВУ)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="terms__main">
+                        <div class="terms__passport">
+                            <div class="passport__image">
+                                <img src="/images/passport.png" alt="">
+                            </div>
+                            <div class="passport__main">
+                                <div class="passport__header">
+                                    Для аренды потребуется
+                                </div>
+                                <div class="passport__subheader">
+                                    Паспорт
+                                </div>
+                                <div class="passport__info">
+                                    Первая страница + регистрация
+                                </div>
+                                <div class="passport__subheader">
+                                    Водительское удостоверение
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terms__info">
+                            <div class="info__item">
+                                <div class="info__block" id="ysl">
+                                    <div class="item__text">
+                                        Условия страхования
+                                    </div>
+                                    <div class="item__img" id="yslImg">
+                                        <img src="/images/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info__hidden-block" id="yslBlock">
+                                    Все автомобили застрахованы по ОСАГО и КАСКО без франшиз и ограничений.
+                                </div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__block" id="dop">
+                                    <div class="item__text">
+                                        Дополнительные водители
+                                    </div>
+                                    <div class="item__img" id="dopImg">
+                                        <img src="/images/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info__hidden-block" id="dopBlock">
+Дополнительный водитель должен быть заявлен до момента начала аренды автомобиля, предоставляя оригиналы паспорта и водительского удостоверения. В стоимость включено 2 водителя. Внесение в страховку каждого последующего водителя происходит за дополнительную плату.
+                                </div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__block" id="dos">
+                                    <div class="item__text">
+                                        Доставка/ забор автомобиля
+                                    </div>
+                                    <div class="item__img" id="dosImg">
+                                        <img src="/images/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info__hidden-block" id="dosBlock">
+Мы можем доставить или забрать автомобиль в любое удобное для вас место за дополнительную плату, в зависимости от местоположения и выбранного автомобиля.
+                                </div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__block" id="ter">
+                                    <div class="item__text">
+                                        Территория использования
+                                    </div>
+                                    <div class="item__img" id="terImg">
+                                        <img src="/images/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info__hidden-block" id="terBlock">
+Аренда автомобиля предоставляется на территории Москвы и Московской области, Санкт-Петербурга и Ленинградской области. Выезд за пределы разрешенной территории допустим, но оговаривается в индивидуальном порядке.
+                                </div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__block" id="bro">
+                                    <div class="item__text">
+                                        Бронирование автомобиля
+                                    </div>
+                                    <div class="item__img" id="broImg">
+                                        <img src="/images/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info__hidden-block" id="broBlock">
+                                    Для бронирования автомобиля на конкретный день необходимо заранее оставить заявку на сайте или позвонить нам по номеру, и внести аванс в сумме 30% стоимости аренды. В случае отмены бронирования предоплата не возвращается.
+                                </div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__block" id="zap">
+                                    <div class="item__text">
+                                        Запрещается
+                                    </div>
+                                    <div class="item__img" id="zapImg">
+                                        <img src="/images/plus.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="info__hidden-block" id="zapBlock">
+                                    <ol>
+                                        <li>Передавать управление автомобилем третьему лицу, не внесенному в договор</li>
+                                        <li>Использование автомобиля для криминальных целей (мошенничество, контрабанда, перевозка наркотиков)</li>
+                                        <li>Использование автомобиля для извлечения прибыли</li>
+                                        <li>Нарушение установленных скоростных ограничений</li>
+                                    </ol>
+В случае выявления любого из данных нарушений, автомобиль может быть принудительно изъят, без возмещения уплаченных средств и страхового депозита.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        <div class="footer">
+            <div class="footer_wrapper">
+                <div class="footer_politics">
+                    <div class="politics_logo"><img src="/images/Logo.png" alt=""></div>
+                    <div class="politics_content">
+                        <p>Аренда автомобилей премиум класса в Москве</p> <br>
+                        <p>© 2022 Все
+                            права защищены Политика конфиденциальности</p>
+                    </div>
+                </div>
+                <div class="footer_menu">
+                    <div class="menu_title title">Разделы:</div>
+                    <div class="menu_content">
+                        <a href="#popup" class="popup_link">
+                            <p>Мой профиль</p>
+                        </a><a href="#">
+                            <p>Автопарк</p>
+                        </a><a href="#">
+                            <p>Условия</p>
+                        </a><a href="#">
+                            <p>О нас</p>
+                        </a><a href="#">
+                            <p>Контакты</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_contacts">
+                    <div class="contacts_title title">
+                        Контакты:
+                    </div>
+                    <div class="contacts_content">
+                        <p>+7 (904) 033-62-58</p>
+                        <p>+7 (987) 935-83-24</p>
+                    </div>
+                    <div class="writeUs title">
+                        Написать нам:
+                    </div>
+                    <div class="writeUs_content">
+                        luxuryrentmsk@gmail.com
+                    </div>
+                </div>
+                <div class="footer_address">
+                    <div class="address_title title">
+                        Адрес:
+                    </div>
+                    <div class="address_content">
+                        <p>Россия, г.Москва,</p>
+                        <p>Новый Арбат, 32</p>
+                    </div>
+                    <div class="address_links">
+                        <a href="#"><img src="/images/footer/telegram.png" alt=""></a>
+                        <a href="#"> <img src="/images/footer/vk.png" alt=""></a>
+                        <a href="#"><img src="/images/footer/inst.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup_body">
+            <form action="auth.php" method="post">
+                <div class="popup_content">
+                    <div class="popup_letter"></div>
+                    <div class="popup_title">Вход в личный кабинет</div>
+                    <input type="text" placeholder="Логин" name="auth_login" class="popup_login popup_input">
+                    <input type="password" placeholder="Пароль" name="auth_password" class="popup_password popup_input">
+                    <button action="submit" class="popup_button">Вход</button>
+                    <a href="#popup_2" class="popup_link popup_registration">
+                        <div>Вас еще нет в системе?<br>
+                            Зарегистрируйтесь!</div>
+                    </a>
+                    <div class="popup_terms">Нажимая на кнопку, вы принимаете<br>
+                        <a href="#">условия пользовательского соглашения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="popup_2">
+        <div class="popup_body">
+            <form action="registration.php" method="post">
+                <div class="popup_content">
+                    <div class="popup_title">Регистрация</div>
+                    <input type="text" id="popup_name" placeholder="Ваше Имя:" name="popup_name"
+                        class="popup_name popup_input">
+                    <input type="email" id="popup_email" placeholder="Ваш E-mail:" name="popup_email"
+                        class="popup_email popup_input">
+                    <input type="password" id="popup_password" placeholder="Пароль" name="popup_password"
+                        class="popup_password popup_input">
+                    <input type="password" id="popup_passwordRepeat" name="popup_passwordRepeat"
+                        placeholder="Повторите пароль" class="popup_passwordRepeat popup_input">
+                    <button action="submit" id="popup_button" class="popup_button">Зарегистрироваться</button>
+                    <div id="error"></div>
+                    <div class="popup_term last">Нажимая на кнопку, вы принимаете<br>
+                        <a href="#">условия пользовательского соглашения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/js/script.js"></script>
+    <script src="/js/popup.js"></script>
+    <script src="/js/terms.js"></script>
+</body>
+
+</html>
