@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Luxury rent</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header lock_padding">
+            <div class="header_body">
+                <div class="header_menu">
+                    <div class="menu_location">
+                        <img src="images/Vector.png" alt="">
+                        <p>Москва</p>
+                    </div>
+                    <div class="menu_number1">
+                        <p>+7 (904) 033-62-58</p>
+                    </div>
+                    <div class="menu_logo">
+                        <a href="index.html"> <img src="images/Logo.png" alt=""></a>
+                    </div>
+                    <div class="menu_number2">
+                        <p>+7 (987) 935-83-24</p>
+                    </div>
+                    <div class="menu_account">
+                        <a href="#popup" class="account_link popup_link">
+                            <img src="images/account.png" alt="">
+                        </a>
+                        <div id="account_burger">
+                            <div class="burger_line first"></div>
+                            <div class="burger_line second"></div>
+                            <div class="burger_line fourth"></div>
+                        </div>
+                        <div id="main_menu">
+                            <div id="close">
+                                <img src="images/Close.png" alt="">
+                            </div>
+                            <nav>
+                                <a href="#popup" class="popup_link">Мой профиль</a>
+                                <a href="/pages/catalog.html">Автопарк</a>
+                                <a href="/pages/terms.html">Условия</a>
+                                <a href="/pages/aboutUs.html">О нас</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_body">
+                <div class="title">
+                    <p> Premium car rental</p>
+                </div>
+                <a href="#">
+                    <div class="catalog">
+                        <div class="catalog_arrow">
+                            <img src="images/arrow.png" alt="" id="arrow">
+                            <img src="images/arrow_black.png" alt="" id="arrow_black">
+                        </div>
+                        <a href="/pages/catalog.html" class="catalog_content">
+                            <p>КАТАЛОГ АВТОМОБИЛЕЙ</p>
+                        </a>
+                    </div>
+                </a>
+                <div class="main_info">
+                    <div class="info_block">
+                        <div class="block_logo">
+                            <img src="images/car.png" alt="">
+                        </div>
+                        <div class="block_title">
+                            Премиальные авто
+                        </div>
+                        <div class="block_body">
+                            В нашем автопарке только преальные автомобили
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="block_logo">
+                            <img src="images/TO.png" alt="">
+                        </div>
+                        <div class="block_title">
+                            Постоянное ТО
+                        </div>
+                        <div class="block_body">
+                            Наши машины каждые пол года проходят плановое ТО
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="block_logo">
+                            <img src="images/support.png" alt="">
+                        </div>
+                        <div class="block_title">
+                            Поддержка 24/7
+                        </div>
+                        <div class="block_body">
+                            Мы окажем поддержку нашим клиентам в любое время
+                        </div>
+                    </div>
+                </div>
+                <div class="carPark">
+                    <div class="carPark_title">
+                        <p>Автопарк</p>
+                    </div>
+                    <div class="carPark_content">
+                        <a href="pages/lambo.php">
+                            <div class="content_item first">
+                                <div class="title">
+                                    Lamborghini Aventador S
+                                </div>
+                                <div class="price">
+                                    200 000 ₽/сутки
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="content_item second">
+                                <div class="title">
+                                    Rolls Royce Cullinan Black
+                                    Badge
+                                </div>
+                                <div class="price">
+                                    120 000 ₽/сутки
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="content_item third">
+                                <div class="title audi">
+                                    Audi R8
+                                </div>
+                                <div class="price">
+                                    45 000 ₽/сутки
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="content_item fourth">
+                                <div class="title">
+                                    Ford Mustang New
+                                </div>
+                                <div class="price">
+                                    20 000 ₽/сутки
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="/pages/catalog.html">
+                        <p class="carPark_button">
+                            ВСЕ АВТОМОБИЛИ
+                        </p>
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="info_title">
+                        Как арендовать авто?
+                    </div>
+                    <div class="info_content">
+                        <p><span class="color">[</span>01<span class="color first">]</span>Выбрать автомобиль</p>
+                        <p><span class="color">[</span>02<span class="color second">]</span>Указать период аренды</p>
+                        <p><span class="color">[</span>03<span class="color third">]</span>Войти в личный
+                            кабинет<br><span class="text">(или зарегистрироваться и заполнить всю необходимую инф. о
+                                себе)</span></p>
+                        <p><span class="color">[</span>03<span class="color fourth">]</span>Оформить
+                            аренду<br><span class="text">(это можно сделать как на сайте, так и по номеру
+                                телефона)</span></p>
+                        <p><span class="color">[</span>03<span class="color fifth">]</span>Подтвердить
+                            аренду<br><span class="text"> (после звонка, наш менеджер с вами свяжется для
+                                подтверждения)</span></p>
+                        <p><span class="color">[</span>06<span class="color sixth">]</span>Получить авто в назначенную
+                            дату</p>
+                    </div>
+                </div>
+                <div class="clients">
+                    <div class="clients_title">
+                        Наши клиенты
+                    </div>
+                    <div class="swiper-conatainer">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="slide-image" src="images/slider/clients_1 2.png"
+                                    alt=""></div>
+                            <div class="swiper-slide"><img class="slide-image" src="images/slider/clients_2 1.png"
+                                    alt=""></div>
+                            <div class="swiper-slide"><img class="slide-image" src="images/slider/clients_3 1.png"
+                                    alt=""></div>
+                            <div class="swiper-slide"><img class="slide-image" src="images/slider/clients_4 2.png"
+                                    alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits">
+                    <div class="benefits_title">
+                        Зачем у нас арендуют авто премиум-класса?
+                    </div>
+                    <div class="benefits_content">
+                        <p>
+                            Premium car rental дает вам возможность прикоснуться к роскоши
+                            за доступную стоимость. Аренда машины для самых различных целей – это выбор уверенных в себе
+                            людей независимо от их достатка.
+                            С нашими машинами Porsche, Bentley, Ferrari, Lamborghini и другими вы почувствуете себя
+                            королем Арабских Эмиратов. Каждый автомобиль – это наша гордость и мы готовы поделиться ею с
+                            вами. Динамика, комфорт, эстетика – все, что нужно, чтобы ваша самооценка резко повысилась.
+                        </p>
+                        <br>
+                        <p>
+                            Нашим автопарком воспользовалось уже более 350 клиентов.
+                            В нашем автопарке машины проходят ежедневные проверки,
+                            а каждые пол года плановое ТО. Наши менеджеры на связи с вами 24/7 каждый день и помогут
+                            решить любую возникшую проблему.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <form id="ajax-form" action="mail.php" method="POST">
+                        <div class="feedback_title">Остались вопросы?</div>
+                        <div class="feedback_text">Мы перезвоним вам и проконсультируем по любому вопросу</div>
+                        <input type="text" name="user_name" class="feedback_name" placeholder="Ваше имя">
+                        <input type="text" name="user_phone" class="feedback_number" type="tel"
+                            placeholder="+7 (___)-___-__-__">
+                        <button type="submit" class="feedback_button">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_wrapper">
+                <div class="footer_politics">
+                    <div class="politics_logo"><img src="images/Logo.png" alt=""></div>
+                    <div class="politics_content">
+                        <p>Аренда автомобилей премиум класса в Москве</p> <br>
+                        <p>© 2022 Все
+                            права защищены Политика конфиденциальности</p>
+                    </div>
+                </div>
+                <div class="footer_menu">
+                    <div class="menu_title title">Разделы:</div>
+                    <div class="menu_content">
+                        <a href="#popup" class="popup_link">
+                            <p>Мой профиль</p>
+                        </a><a href="/pages/catalog.html">
+                            <p>Автопарк</p>
+                        </a><a href="/pages/terms.html">
+                            <p>Условия</p>
+                        </a><a href="/pages/aboutUs.html">
+                            <p>О нас</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_contacts">
+                    <div class="contacts_title title">
+                        Контакты:
+                    </div>
+                    <div class="contacts_content">
+                        <p>+7 (904) 033-62-58</p>
+                        <p>+7 (987) 935-83-24</p>
+                    </div>
+                    <div class="writeUs title">
+                        Написать нам:
+                    </div>
+                    <div class="writeUs_content">
+                        luxuryrentmsk@gmail.com
+                    </div>
+                </div>
+                <div class="footer_address">
+                    <div class="address_title title">
+                        Адрес:
+                    </div>
+                    <div class="address_content">
+                        <p>Россия, г.Москва,</p>
+                        <p>Новый Арбат, 32</p>
+                    </div>
+                    <div class="address_links">
+                        <a href="#"><img src="images/footer/telegram.png" alt=""></a>
+                        <a href="#"> <img src="images/footer/vk.png" alt=""></a>
+                        <a href="#"><img src="images/footer/inst.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup_body">
+            <form action="auth.php" method="post">
+                <div class="popup_content">
+                    <div class="popup_letter"></div>
+                    <div class="popup_title">Вход в личный кабинет</div>
+                    <input type="text" placeholder="Логин" name="auth_login" class="popup_login popup_input">
+                    <input type="password" placeholder="Пароль" name="auth_password" class="popup_password popup_input">
+                    <button action="submit" class="popup_button">Вход</button>
+                    <a href="#popup_2" class="popup_link popup_registration">
+                        <div>Вас еще нет в системе?<br>
+                            Зарегистрируйтесь!</div>
+                    </a>
+                    <div class="popup_terms">Нажимая на кнопку, вы принимаете<br>
+                        <a href="#">условия пользовательского соглашения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="popup_2">
+        <div class="popup_body">
+            <form action="registration.php" method="post">
+                <div class="popup_content">
+                    <div class="popup_title">Регистрация</div>
+                    <input type="text" id="popup_name" placeholder="Ваше Имя:" name="popup_name"
+                        class="popup_name popup_input">
+                    <input type="email" id="popup_email" placeholder="Ваш E-mail:" name="popup_email"
+                        class="popup_email popup_input">
+                    <input type="password" id="popup_password" placeholder="Пароль" name="popup_password"
+                        class="popup_password popup_input">
+                    <input type="password" id="popup_passwordRepeat" name="popup_passwordRepeat"
+                        placeholder="Повторите пароль" class="popup_passwordRepeat popup_input">
+                    <button action="submit" id="popup_button" class="popup_button">Зарегистрироваться</button>
+                    <div id="error"></div>
+                    <div class="popup_term last">Нажимая на кнопку, вы принимаете<br>
+                        <a href="#">условия пользовательского соглашения</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
